@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Pruebas</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #222; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #f0f0f0; }
+        input, button, select, textarea { padding: 8px; margin: 5px 0 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #007bff; color: #fff; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .box { background: #e9ecef; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        img { max-width: 100%; height: auto; border-radius: 4px; }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>🧪 Página de Pruebas HTML</h1>
+        <p>Este archivo contiene elementos básicos para probar CSS, JS, responsive, formularios y más.</p>
+
+        <h2>📝 Texto y Listas</h2>
+        <p>Párrafo de prueba con <strong>negrita</strong>, <em>cursiva</em> y <a href="#">enlace de prueba</a>.</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2
+                <ol>
+                    <li>Subelemento A</li>
+                    <li>Subelemento B</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h2>🖼️ Imagen de Prueba</h2>
+        <img src="https://picsum.photos/600/200?grayscale" alt="Imagen aleatoria de prueba">
+
+        <h2>📊 Tabla</h2>
+        <table>
+            <thead>
+                <tr><th>ID</th><th>Nombre</th><th>Rol</th><th>Estado</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Ana</td><td>Admin</td><td>Activo</td></tr>
+                <tr><td>2</td><td>Luis</td><td>Editor</td><td>Inactivo</td></tr>
+                <tr><td>3</td><td>María</td><td>Usuario</td><td>Activo</td></tr>
+            </tbody>
+        </table>
+
+        <h2>📋 Formulario</h2>
+        <form id="testForm" onsubmit="event.preventDefault(); alert('✅ Formulario enviado (modo prueba)');">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required><br>
+
+            <label for="email">Correo:</label><br>
+            <input type="email" id="email" placeholder="juan@ejemplo.com" required><br>
+
+            <label for="pais">País:</label><br>
+            <select id="pais">
+                <option value="mx">México</option>
+                <option value="es">España</option>
+                <option value="ar">Argentina</option>
+                <option value="otro">Otro</option>
+            </select><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" rows="3" placeholder="Escribe algo..."></textarea><br>
+
+            <button type="submit">Enviar prueba</button>
+        </form>
+
+        <h2>📦 Contenedor de Estilo</h2>
+        <div class="box">
+            <h3>Prueba de caja</h3>
+            <p>Útil para verificar márgenes, padding, colores y bordes sin interferir con el resto del documento.</p>
+        </div>
+
+        <hr>
+        <p><small>💡 Consejo: Abre este archivo en el navegador y presiona <kbd>F12</kbd> para inspeccionar elementos y probar cambios en vivo.</small></p>
+    </div>
+
+    <script>
+        // Espacio listo para pruebas de JavaScript
+        console.log("🟢 Página de pruebas cargada correctamente.");
+    </script>
 </body>
 </html>
